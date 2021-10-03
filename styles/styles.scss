@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+// ### Primary
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    // margin: 0
+    box-sizing: border-box
+}
+
+@import 'componentes/variables';
+@import 'componentes/mediaqueries';
+@import 'componentes/header';
+@import 'componentes/firstsection';
+@import 'componentes/secondsection';
+@import 'componentes/thirdsection';
+@import 'componentes/footer';
+
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,auto);
+    }
+};
+
+img {
+    width: 100%;
+};
+
+.sect {
+    @include tablet {
+        padding: 50px 100px;
+
+    }
+}
